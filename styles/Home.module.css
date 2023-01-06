@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  height: 95vh;
+  color: white;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.projectCard {
+  width: 25vw;
+  background-color: rgb(140, 140, 215);
+  color: white;
+}
+
+.projectHeader {
+  font-size: 30px;
+  width: 52%;
+  border-bottom: solid 3pt white;
+}
+
+.projectFooter {
+  width: 52%;
+  border-bottom: solid 3pt white;
+}

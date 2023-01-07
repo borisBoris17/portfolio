@@ -4,10 +4,6 @@ import styles from '../styles/Resume.module.css';
 export default function ResumePage() {
   return (
     <div>
-      <div className="appBar">
-      <Link className='link' href={"/"}>Projects</Link>
-        <Link className='link' href={"/resume"} >Resume</Link>
-      </div>
       <main className={styles.main}>
         <h1>Tucker's Resume</h1>
         <div className={styles.summary}>

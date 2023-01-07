@@ -4,14 +4,14 @@
   gap: 2em;
   align-items: center;
   height: 95vh;
-  color: white;
+  color: #A3C7D6;
   margin-top: 10vh;
 }
 
 .experiences {
   display: grid;
   width: 71vw;
-  grid-template-columns: 25vw auto;
+  grid-template-columns: 15vw auto 15vw auto;
   gap: 50px;
   padding: 50px 0px;
   border-bottom: solid 3pt #A3C7D6;
@@ -22,7 +22,12 @@
   flex-direction: column;
   align-items: center;
   font-size: 30pt;
+  color: #A3C7D6;
+}
+
+.skillsDesc {
   color: white;
+  margin: 15px;
 }
 
 .projectsTitle {

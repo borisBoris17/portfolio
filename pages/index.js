@@ -1,5 +1,6 @@
 import { Box, Card, CardContent, CardHeader, CardMedia } from '@mui/material';
 import Head from 'next/head'
+import React from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -21,6 +22,10 @@ export default function Home() {
     }
   ];
 
+  const viewProject = (url) => {
+    window.location.assign(url);
+  }
+
   return (
     <>
       <Head>
@@ -32,9 +37,9 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Hello. I am Tucker Bichsel.</h1>
         <div className={styles.experiences} >
-          {skills.map(skill =>
-            <>
-              <div className={styles.skillName}>
+          {skills.map((skill, index) =>
+            <React.Fragment key={index}>
+              <div className={styles.skillName} key={index}>
                 {skill.name}
                 <Box
                   component="img"
@@ -46,13 +51,13 @@ export default function Home() {
                   src={skill.imageSrc}
                 />
               </div>
-              <div>{skill.desc}</div>
-            </>
+              <div className={styles.skillsDesc}>{skill.desc}</div>
+            </React.Fragment>
           )}
         </div>
         <h2 className={styles.projectsTitle}>Personal Projects</h2>
         <div className={styles.projects}>
-          <Card className={styles.projectCard} >
+          <Card className={styles.projectCard} onClick={() => viewProject('https://dvc-calc.tucker-dev.com')}>
             <CardHeader className={styles.cardHeader}
               title="DVC Calculator" />
             <CardMedia className={styles.cardImage}
@@ -60,9 +65,9 @@ export default function Home() {
               image="/dvcCalc.png"
               alt="DVC Calc"
             />
-            <CardContent>This is a calculator to plan disney trips. <a className='link' href="https://dvc-calc.tucker-dev.com">DVC Calculator</a></CardContent>
+            <CardContent>This is a calculator to plan disney trips.</CardContent>
           </Card>
-          <Card className={styles.projectCard}>
+          <Card className={styles.projectCard} onClick={() => viewProject('https://memory-social.tucker-dev.com')}>
             <CardHeader className={styles.cardHeader}
               title="Memory Social" />
             <CardMedia className={styles.cardImage}
@@ -70,7 +75,7 @@ export default function Home() {
               image="/memorySocial.png"
               alt="Merory Social"
             />
-            <CardContent>This is a social media application where the posts do not live forever and instead turn into memories. <a className='link' href="https://memory-social.tucker-dev.com">Memory Social</a></CardContent>
+            <CardContent>This is a social media application where the posts do not live forever and instead turn into memories.</CardContent>
           </Card>
         </div>
         <div className={styles.footer}>

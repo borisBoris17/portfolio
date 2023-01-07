@@ -4,15 +4,16 @@
   gap: 4em;
   align-items: center;
   height: 95vh;
-  color: white;
+  color: #A3C7D6;
   gap: 5px;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 
 .summary {
   width: 35vw;
   margin-bottom: 25px;
   font-size: 18px;
+  color: white;
 }
 
 .workBlock {
@@ -23,15 +24,16 @@
 
 .dateRange {
   margin: 10px;
-  color: #A3C7D6;
   font-size: 20px;
 }
 
 .roleTitle {
   font-size: 30px;
+  color: white;
   margin: 20px 10px;
 }
 
 .roleDesc {
+  color: white;
   margin: 10px;
 }

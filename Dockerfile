@@ -9,6 +9,7 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+COPY ./nginx.conf /nginx.conf
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
@@ -27,6 +28,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/public ./public
+COPY --from=builder /nginx.conf /etc/nginx/conf.d/default.conf
 
 USER nextjs
 

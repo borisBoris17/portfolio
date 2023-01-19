@@ -7,6 +7,7 @@ export default function Appbar() {
         <Link className='homeLink' href={"/"} >Tucker Bichsel</Link>
         <div>
           <Link className='link' href={"/resume"} >Resume</Link>
+          <Link className='link' href={"/contactMe"} >Contact Me</Link>
         </div>
       </div>
     </div>

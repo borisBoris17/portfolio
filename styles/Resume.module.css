@@ -10,14 +10,14 @@
 }
 
 .summary {
-  width: 35vw;
+  width: 45vw;
   margin-bottom: 25px;
   font-size: 18px;
   color: white;
 }
 
 .workBlock {
-  width: 30vw;
+  width: 40vw;
   margin-bottom: 5px;
   border-left: 3pt solid #A3C7D6;
 }
@@ -27,8 +27,14 @@
   font-size: 20px;
 }
 
-.roleTitle {
+.company {
   font-size: 30px;
+  color: white;
+  margin: 20px 10px;
+}
+
+.roleTitle {
+  font-size: 20px;
   color: white;
   margin: 20px 10px;
 }

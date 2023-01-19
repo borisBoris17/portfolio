@@ -11,7 +11,7 @@
 .experiences {
   display: grid;
   width: 71vw;
-  grid-template-columns: 15vw auto 15vw auto;
+  grid-template-columns: 12vw auto 12vw auto;
   gap: 50px;
   padding: 50px 0px;
   border-bottom: solid 3pt #A3C7D6;

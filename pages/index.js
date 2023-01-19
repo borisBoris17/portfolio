@@ -8,17 +8,22 @@ export default function Home() {
     {
       name: 'Java',
       imageSrc: '/java.png',
-      desc: 'I have more than 6 years of professional Experience using Java.'
+      desc: 'I have more than 6 years of professional experience using Java.'
     },
     {
       name: 'JavaScript',
       imageSrc: '/javascript.png',
-      desc: 'I have more than 6 years of professional Experience using JavaScript.'
+      desc: '6+ years of professional experience using JavaScript. '
     },
     {
       name: 'React',
       imageSrc: '/react.png',
       desc: 'Professional experience migrating legacy application to React. Work on personal projects, including the projects listed below.'
+    },
+    {
+      name: 'Docker',
+      imageSrc: '/docker.png',
+      desc: 'Used Docker professionally to deploy multi-service architecture. Used to Build and deploy full stack personal projects.'
     }
   ];
 

@@ -3,10 +3,6 @@ version: '3.7'
 services:
   portfolio:
     build: ./
-  nginx:
-    build: ./nginx
-    ports:
-      - 80:80
 
 networks:
   default:

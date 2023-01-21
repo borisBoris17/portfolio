@@ -1,13 +1,12 @@
 version: '3.7'
 
-services: 
-
+services:
   portfolio:
-    image: tbichse/portfolio:1.0-ubuntu
-    container_name: portfolio 
-    stdin_open: true
-    ports: 
-      - 8081:3000
+    build: ./
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
 
 networks:
   default:

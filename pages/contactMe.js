@@ -46,12 +46,15 @@ export default function ContactMePage() {
   return (
     <div>
       <main className={styles.main}>
-        <h1>Let's Connect!</h1>
+        <h1>Let&apos;s Connect!</h1>
         <h2>Fill out form below and I will get back to you!</h2>
         <h3 style={{ color: "red" }}>{errorMessage}</h3>
         <FormControl className={styles.form} fullWidth>
-          <div className="formTop" style={{width:  "70%"}}>
+          <div className={styles.formTop} style={{width:  "70%"}}>
             <TextField
+              inputProps={{
+                className: styles.formTopLeftInput,
+              }}
               className={styles.formTopLeftInput}
               id="nameInput"
               value={name}

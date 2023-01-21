@@ -44,25 +44,20 @@ export default function ResumePage() {
   return (
     <div>
       <main className={styles.main}>
-        <h1>Tucker's Resume</h1>
+        <h1>Tucker&apos;s Resume</h1>
         <div className={styles.summary}>
           Software Engineer with 5+ years of experience Java and JavaScript, including several different frameworks, who is comfortable learning new skills to achieve a goal. Designs and implements both bug fixes and new features. Strong team member dedicated to making sure requirements are delivered timely and accurately while ensuring all team members feel included and heard throughout the process.
         </div>
         <h2>Time Line</h2>
-        {console.log(positions)}
-        {positions.map(position => {
-          
-          console.log(position.dateRange)
-        })}
-        {positions.map(position => 
-          <div className={styles.workBlock}>
+        {positions.map((position, index) => 
+          <div key={index} className={styles.workBlock}>
             <p className={styles.dateRange}>{position.dateRange}</p>
             <p className={styles.company}>{position.name}</p>
             <p className={styles.roleTitle}>{position.title}</p>
             <p className={styles.roleDesc}>
               <ul>
-                {position.details?.map(detail => 
-                  <li>{detail}</li>
+                {position.details?.map((detail, index) => 
+                  <li key={index}>{detail}</li>
                 )}
               </ul>
             </p>

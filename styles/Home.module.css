@@ -48,6 +48,20 @@
   color: white;
 }
 
+.imageContainer {
+  display: flex;
+  align-items: 'center';
+  justify-content: 'center';
+}
+
+.appImage {
+  /* height: 50vw; */
+  width: 15vw;
+  margin: auto;
+  background-color: #624F82;
+  color: white;
+}
+
 .footer {
   display: flex;
   width: 70%;

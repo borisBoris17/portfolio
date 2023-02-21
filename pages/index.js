@@ -82,6 +82,18 @@ export default function Home() {
             />
             <CardContent>This is a social media application where the posts do not live forever and instead turn into memories.</CardContent>
           </Card>
+          <Card className={styles.projectCard} >
+            <CardHeader className={styles.cardHeader}
+              title="DVC Calculator Mobile App" />
+            <div className={styles.imageContainer}>
+              <CardMedia className={styles.appImage}
+                component="img"
+                image="/dvcCalcApp.png"
+                alt="DVC Calc App"
+              />
+            </div>
+            <CardContent>This is similar to the calculator above but in App form. It does offer a differnt way to query the points by fetching all values and giving the use the ability to filter results.</CardContent>
+          </Card>
         </div>
         <div className={styles.footer}>
           <p className={styles.footerLeft}>Tucker Bichsel</p>

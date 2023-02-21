@@ -48,6 +48,7 @@ export default function ContactMePage() {
       <main className={styles.main}>
         <h1>Let&apos;s Connect!</h1>
         <h2>Fill out form below and I will get back to you!</h2>
+        <h2>Or if you want to reach out directly, please email me at support@tucker-dev.com</h2>
         <h3 style={{ color: "red" }}>{errorMessage}</h3>
         <FormControl className={styles.form} fullWidth>
           <div className={styles.formTop} style={{width:  "70%"}}>

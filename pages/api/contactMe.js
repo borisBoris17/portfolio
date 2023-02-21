@@ -14,10 +14,10 @@ export default function handler(req, res) {
     const {name, email, message} = req.body;
     var mailOptions = {
       from: config.email.address,
-      to: config.email.address,
+      to: 'tucker@tucker-dev.com',
       subject: `${name} saw your Portfolio!`,
       text: `
-      ${name} wnated to connect after seeing your portfolio. 
+      ${name} wanted to connect after seeing your portfolio. 
       They Sent this message: 
 
       ${message}
